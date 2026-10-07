@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>MainAffineCipher.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+.s4 { color: #2aacb8;}
+</style>
+</head>
+<body bgcolor="#191a1c">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MainAffineCipher.java</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">pe</span><span class="s2">.</span><span class="s1">edu</span><span class="s2">.</span><span class="s1">uni</span><span class="s2">.</span><span class="s1">fc</span><span class="s2">.</span><span class="s1">cc</span><span class="s2">.</span><span class="s1">cc0f7</span><span class="s2">.</span><span class="s1">substitution</span><span class="s2">.</span><span class="s1">run</span><span class="s2">;</span>
+
+<span class="s0">import </span><span class="s1">pe</span><span class="s2">.</span><span class="s1">edu</span><span class="s2">.</span><span class="s1">uni</span><span class="s2">.</span><span class="s1">fc</span><span class="s2">.</span><span class="s1">cc</span><span class="s2">.</span><span class="s1">cc0f7</span><span class="s2">.</span><span class="s1">substitution</span><span class="s2">.</span><span class="s1">services</span><span class="s2">.</span><span class="s1">AffineCipher</span><span class="s2">;</span>
+
+<span class="s0">public class </span><span class="s1">MainAffineCipher </span><span class="s2">{</span>
+    <span class="s0">public static void </span><span class="s1">main</span><span class="s2">(</span><span class="s1">String</span><span class="s2">[] </span><span class="s1">args</span><span class="s2">){</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Main Affine Cipher !!!&quot;</span><span class="s2">);</span>
+        <span class="s0">int </span><span class="s1">a </span><span class="s2">= </span><span class="s4">11</span><span class="s2">;</span>
+        <span class="s0">int </span><span class="s1">b </span><span class="s2">= </span><span class="s4">6</span><span class="s2">;</span>
+        <span class="s1">AffineCipher affineCipher </span><span class="s2">= </span><span class="s0">new </span><span class="s1">AffineCipher</span><span class="s2">(</span><span class="s1">a</span><span class="s2">, </span><span class="s1">b</span><span class="s2">);</span>
+        <span class="s1">String original </span><span class="s2">= </span><span class="s3">&quot;Este es un texto plano&quot;</span><span class="s2">;</span>
+        <span class="s1">String encrypted </span><span class="s2">= </span><span class="s1">affineCipher</span><span class="s2">.</span><span class="s1">encrypt</span><span class="s2">(</span><span class="s1">original</span><span class="s2">);</span>
+        <span class="s1">String decrypted </span><span class="s2">= </span><span class="s1">affineCipher</span><span class="s2">.</span><span class="s1">decrypt</span><span class="s2">(</span><span class="s1">encrypted</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Original :&quot; </span><span class="s2">+ </span><span class="s1">original</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Encrypted: &quot; </span><span class="s2">+ </span><span class="s1">encrypted</span><span class="s2">);</span>
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;Decrypted: &quot; </span><span class="s2">+ </span><span class="s1">decrypted</span><span class="s2">);</span>
+
+        <span class="s1">System</span><span class="s2">.</span><span class="s1">out</span><span class="s2">.</span><span class="s1">println</span><span class="s2">(</span><span class="s3">&quot;done!&quot;</span><span class="s2">);</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>
